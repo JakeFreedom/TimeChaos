@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://b58nkr3w4ubtw"]
+
+[ext_resource type="Script" uid="uid://chs5ehiqai6a0" path="res://game_timer.gd" id="1_qxk6v"]
+[ext_resource type="FontFile" uid="uid://d0o174yw3cqlf" path="res://Imports/Fonts/deathrattlebb_reg.ttf" id="2_wl7nu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qxk6v"]
+font_size = 75
+font_color = Color(0.872209, 0, 0.173202, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="GameTimer" type="Node2D"]
+script = ExtResource("1_qxk6v")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Game Time"
+
+[node name="TimeLeftLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "[00:00:00]"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 120.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -107.0
+offset_top = 315.0
+offset_right = 323.0
+offset_bottom = 418.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameOver" type="Label" parent="HBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.705106, 0.190579, 0.0307647, 1)
+theme_override_fonts/font = ExtResource("2_wl7nu")
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_qxk6v")
+horizontal_alignment = 1

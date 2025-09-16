@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://cjgalf7btkrhe"]
+
+[ext_resource type="Script" uid="uid://rowsra41x5mm" path="res://title_screen.gd" id="1_ak2if"]
+[ext_resource type="Texture2D" uid="uid://dkgm8qy5gb3dd" path="res://Imports/TitleScreenBackGround.png" id="1_v6p8y"]
+[ext_resource type="FontFile" uid="uid://ps7xim4sf5k4" path="res://Imports/Fonts/Super Trend.ttf" id="2_ig5kc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ak2if"]
+font_size = 150
+font_color = Color(0.748988, 0.113497, 0.473954, 1)
+outline_size = 30
+outline_color = Color(0.141073, 0.0894752, 0.00492563, 1)
+
+[node name="TitleScreen" type="Node2D"]
+script = ExtResource("1_ak2if")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GameTitle" type="Label" parent="CanvasLayer"]
+offset_left = 267.0
+offset_top = 27.0
+offset_right = 1078.0
+offset_bottom = 209.0
+theme_override_fonts/font = ExtResource("2_ig5kc")
+text = "TIME CHAOS"
+label_settings = SubResource("LabelSettings_ak2if")
+
+[node name="Play" type="Button" parent="CanvasLayer"]
+offset_left = 450.0
+offset_top = 248.0
+offset_right = 612.0
+offset_bottom = 344.0
+theme_override_fonts/font = ExtResource("2_ig5kc")
+theme_override_font_sizes/font_size = 64
+text = "PLAY"
+
+[node name="Quit" type="Button" parent="CanvasLayer"]
+offset_left = 652.0
+offset_top = 250.0
+offset_right = 814.0
+offset_bottom = 346.0
+theme_override_fonts/font = ExtResource("2_ig5kc")
+theme_override_font_sizes/font_size = 64
+text = "QUIT
+"
+
+[node name="HowToPlay" type="Button" parent="CanvasLayer"]
+offset_left = 447.0
+offset_top = 372.0
+offset_right = 831.0
+offset_bottom = 468.0
+theme_override_fonts/font = ExtResource("2_ig5kc")
+theme_override_font_sizes/font_size = 64
+text = "How To Play"
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(638, 361)
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+texture = ExtResource("1_v6p8y")

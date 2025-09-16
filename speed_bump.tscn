@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnvusyx4si1fe"]
+
+[ext_resource type="Texture2D" uid="uid://c1lm823k7mmc0" path="res://LootIcons/icons_14_42.png" id="1_clq4a"]
+[ext_resource type="Script" uid="uid://dvaopn06f4o5p" path="res://speed_bump.gd" id="1_itcgb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_itcgb"]
+radius = 22.8
+
+[node name="SpeedBumb" type="Node2D"]
+script = ExtResource("1_itcgb")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_itcgb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_clq4a")

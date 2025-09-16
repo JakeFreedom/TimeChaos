@@ -1,0 +1,199 @@
+[gd_scene load_steps=42 format=3 uid="uid://b7rtacp6vmh61"]
+
+[ext_resource type="Texture2D" uid="uid://dp2y2bmrp72e7" path="res://icon.svg" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://dmhawrkeq1m6w" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://dbsejq1cx8c7y" path="res://Imports/Characters/Player/Monster5-Walk_00.png" id="3_7lmhl"]
+[ext_resource type="Texture2D" uid="uid://hkdmglvg47u2" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_00.png" id="3_b88wv"]
+[ext_resource type="PackedScene" uid="uid://cq5xvxaxxw10a" path="res://player_weapon.tscn" id="3_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://c1nhbuhjl448a" path="res://Imports/Characters/Player/Monster5-Walk_01.png" id="4_dx0e4"]
+[ext_resource type="Texture2D" uid="uid://dbdvb2nts5ujs" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_01.png" id="4_pgbbb"]
+[ext_resource type="Texture2D" uid="uid://cnu7yl4g6gsgg" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_02.png" id="5_331ug"]
+[ext_resource type="Texture2D" uid="uid://bj7ap1f7xquw" path="res://Imports/Characters/Player/Monster5-Walk_02.png" id="5_jm5j8"]
+[ext_resource type="Texture2D" uid="uid://dr5deaw0dp8ok" path="res://Imports/Characters/Player/Monster5-Walk_03.png" id="6_7hik5"]
+[ext_resource type="Texture2D" uid="uid://dd3wos6xs53c0" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_03.png" id="6_ny14h"]
+[ext_resource type="Texture2D" uid="uid://bfgsvfsri0bl" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_04.png" id="7_ibah8"]
+[ext_resource type="Texture2D" uid="uid://dr7re67g4x4ed" path="res://Imports/Characters/Player/Monster5-Walk_04.png" id="7_qtqh7"]
+[ext_resource type="Texture2D" uid="uid://cbg7vevynfcuw" path="res://Imports/Characters/Player/Monster5-Walk_05.png" id="8_2wuci"]
+[ext_resource type="Texture2D" uid="uid://cv4t86th7o2vc" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_05.png" id="8_3iwfv"]
+[ext_resource type="Texture2D" uid="uid://buu0p5a4wpx5a" path="res://Imports/Characters/Player/Monster5-Walk_06.png" id="9_iruf7"]
+[ext_resource type="Texture2D" uid="uid://dm6ou302bfc53" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_06.png" id="9_qwsg1"]
+[ext_resource type="Texture2D" uid="uid://xncm7duws2km" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_07.png" id="10_1xqrm"]
+[ext_resource type="Texture2D" uid="uid://38vc2fri08ii" path="res://Imports/Characters/Player/Monster5-Walk_07.png" id="10_j5n4i"]
+[ext_resource type="Texture2D" uid="uid://cpnhbp4p3d6nf" path="res://Imports/Characters/Player/Monster5-Walk_08.png" id="11_634y6"]
+[ext_resource type="Texture2D" uid="uid://dgseu8ltj32pk" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_08.png" id="11_bfour"]
+[ext_resource type="Texture2D" uid="uid://d2bmfh6w65b8b" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_09.png" id="12_8gr2b"]
+[ext_resource type="Texture2D" uid="uid://q301xr2mdvjp" path="res://Imports/Characters/Player/Monster5-Walk_09.png" id="12_efrwb"]
+[ext_resource type="Texture2D" uid="uid://chu3tvwg2lqou" path="res://Imports/Characters/Player/Monster5-Walk_10.png" id="13_hiqhm"]
+[ext_resource type="Texture2D" uid="uid://bf8rgylnm6u64" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_10.png" id="13_vl8ci"]
+[ext_resource type="Texture2D" uid="uid://oclxudmqhy3k" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_11.png" id="14_ieltc"]
+[ext_resource type="Texture2D" uid="uid://dceqrgri331q6" path="res://Imports/Characters/Player/Monster5-Walk_11.png" id="14_tkwlq"]
+[ext_resource type="Texture2D" uid="uid://bedltt7jwlqkj" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_12.png" id="15_fddr8"]
+[ext_resource type="Texture2D" uid="uid://b71ui127dq44x" path="res://Imports/Characters/Player/Monster5-Walk_12.png" id="15_hl5qd"]
+[ext_resource type="Texture2D" uid="uid://dw0tn6dvme0yj" path="res://Imports/Characters/Player/Monster5-Walk_13.png" id="16_ek41f"]
+[ext_resource type="Texture2D" uid="uid://bu5xpuo3vtdr8" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_13.png" id="16_oybyf"]
+[ext_resource type="Texture2D" uid="uid://bpxw4lcx4awe6" path="res://Imports/Characters/Player/Shoot/Monster5-Attack_14.png" id="17_ajfva"]
+[ext_resource type="Texture2D" uid="uid://cnk77u2goixyt" path="res://Imports/Characters/Player/Monster5-Walk_14.png" id="17_khis8"]
+[ext_resource type="Texture2D" uid="uid://b3814ggusetcc" path="res://Imports/Characters/Player/Monster5-Walk_15.png" id="18_b88wv"]
+[ext_resource type="Texture2D" uid="uid://ri6whp1hmr6u" path="res://Imports/Characters/Player/Monster5-Walk_16.png" id="19_pgbbb"]
+[ext_resource type="Texture2D" uid="uid://c8dv3lr6m3w0p" path="res://Imports/Characters/Player/Monster5-Walk_17.png" id="20_331ug"]
+[ext_resource type="Texture2D" uid="uid://dvl4dlug31lh5" path="res://Imports/Characters/Player/Monster5-Walk_18.png" id="21_ny14h"]
+[ext_resource type="Texture2D" uid="uid://b0ukhiay18it2" path="res://Imports/Characters/Player/Monster5-Walk_19.png" id="22_ibah8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3iwfv"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("3_b88wv")
+}, {
+"duration": 0.2,
+"texture": ExtResource("4_pgbbb")
+}, {
+"duration": 0.2,
+"texture": ExtResource("5_331ug")
+}, {
+"duration": 0.2,
+"texture": ExtResource("6_ny14h")
+}, {
+"duration": 0.2,
+"texture": ExtResource("7_ibah8")
+}, {
+"duration": 0.2,
+"texture": ExtResource("8_3iwfv")
+}, {
+"duration": 0.2,
+"texture": ExtResource("9_qwsg1")
+}, {
+"duration": 0.2,
+"texture": ExtResource("10_1xqrm")
+}, {
+"duration": 0.2,
+"texture": ExtResource("11_bfour")
+}, {
+"duration": 0.2,
+"texture": ExtResource("12_8gr2b")
+}, {
+"duration": 0.2,
+"texture": ExtResource("13_vl8ci")
+}, {
+"duration": 0.2,
+"texture": ExtResource("14_ieltc")
+}, {
+"duration": 0.2,
+"texture": ExtResource("15_fddr8")
+}, {
+"duration": 0.2,
+"texture": ExtResource("16_oybyf")
+}, {
+"duration": 0.2,
+"texture": ExtResource("17_ajfva")
+}],
+"loop": false,
+"name": &"Shoot",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_7lmhl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dx0e4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jm5j8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7hik5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qtqh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2wuci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_iruf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_j5n4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_634y6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_efrwb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hiqhm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_tkwlq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hl5qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ek41f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_khis8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_b88wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_pgbbb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_331ug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ny14h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ibah8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sh265"]
+radius = 32.85
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
+size = Vector2(60, 60)
+
+[node name="Player" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["Player"]]
+collision_mask = 8
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+visible = false
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_4flbx")
+
+[node name="Node2D" type="Node2D" parent="CharacterBody2D"]
+position = Vector2(10, -19)
+
+[node name="Walk" type="AnimatedSprite2D" parent="CharacterBody2D/Node2D"]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_3iwfv")
+animation = &"Shoot"
+frame = 14
+frame_progress = 1.0
+speed_scale = 5.0
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_sh265")
+
+[node name="PlayerWeapon" parent="CharacterBody2D" instance=ExtResource("3_i3pqv")]
+position = Vector2(0, -41)
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
+shape = SubResource("RectangleShape2D_i3pqv")

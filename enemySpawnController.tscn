@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbm2bvtnllumt"]
+
+[ext_resource type="Script" uid="uid://bu316djrhubwh" path="res://enemy_spawn_controller.gd" id="1_blur6"]
+[ext_resource type="PackedScene" uid="uid://bktifwpwhfhiu" path="res://enemy.tscn" id="2_4oq1r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3fyjp"]
+
+[node name="EnemySpawnController" type="Node2D" node_paths=PackedStringArray("spawnsPoints")]
+script = ExtResource("1_blur6")
+EnemyScene = ExtResource("2_4oq1r")
+spawnsPoints = [NodePath("SpawnPointOne"), NodePath("SpawnPointTwo"), NodePath("SpawnPointThree"), NodePath("SpawnPointFour")]
+
+[node name="SpawnPointOne" type="Node2D" parent="."]
+position = Vector2(1467, 110)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpawnPointOne"]
+shape = SubResource("CircleShape2D_3fyjp")
+
+[node name="SpawnPointTwo" type="Node2D" parent="."]
+position = Vector2(1467, 260)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpawnPointTwo"]
+shape = SubResource("CircleShape2D_3fyjp")
+
+[node name="SpawnPointThree" type="Node2D" parent="."]
+position = Vector2(1467, 500)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpawnPointThree"]
+shape = SubResource("CircleShape2D_3fyjp")
+
+[node name="SpawnPointFour" type="Node2D" parent="."]
+position = Vector2(1467, 650)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpawnPointFour"]
+shape = SubResource("CircleShape2D_3fyjp")

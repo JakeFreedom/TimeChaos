@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://blqcxn0gunsf3"]
+
+[ext_resource type="AudioStream" uid="uid://xne36n7iqfx7" path="res://Imports/Audio/Background/BackGroundMusic-1.mp3" id="1_bpacj"]
+
+[node name="BackGroundMusic" type="Node2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_bpacj")
+volume_db = -30.0
+autoplay = true
+parameters/looping = false
