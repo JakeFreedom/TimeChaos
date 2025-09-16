@@ -1,4 +1,5 @@
 #test push from main branch
+#testing again from main branch
 extends CharacterBody2D
 
 signal on_destoryed(LootDrop)
